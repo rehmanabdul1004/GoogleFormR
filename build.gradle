@@ -1,9 +1,6 @@
 plugins {
     id 'java'
 }
-
-
-
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 apply plugin: 'application'
@@ -55,10 +52,8 @@ test {
         // Optionally do:
         showStackTraces = true
 	}
-
     testLogging.showStandardStreams = true
     test.outputs.upToDateWhen {false}
-
 }
 
 mainClassName = 'demo.App'
